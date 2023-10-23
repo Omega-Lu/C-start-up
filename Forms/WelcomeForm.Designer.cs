@@ -75,7 +75,7 @@
             this.calculatorMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(156, 664);
+            this.menuStrip.Size = new System.Drawing.Size(128, 664);
             this.menuStrip.TabIndex = 4;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -89,7 +89,8 @@
             // calculatorMenuItem
             // 
             this.calculatorMenuItem.Name = "calculatorMenuItem";
-            this.calculatorMenuItem.Size = new System.Drawing.Size(143, 24);
+            this.calculatorMenuItem.Padding = new System.Windows.Forms.Padding(5);
+            this.calculatorMenuItem.Size = new System.Drawing.Size(115, 34);
             this.calculatorMenuItem.Text = "CALCULATOR";
             this.calculatorMenuItem.Click += new System.EventHandler(this.calculatorMenuItem_Click);
             // 

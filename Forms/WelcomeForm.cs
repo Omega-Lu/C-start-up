@@ -41,9 +41,10 @@ namespace WindowsFormsApp6.Forms
         #region Public Methods
         void InitializeMenu()
         {
+           
             ToolStripMenuItem toDo = new ToolStripMenuItem("TODO LIST");
             toDo.Click += ToDoList_Click;
-
+            toDo.Margin = new Padding(5, 5, 5, 5); // Add horizontal spacing
             menuStrip.Items.Add(toDo);
 
         }
