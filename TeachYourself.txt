@@ -1,0 +1,11 @@
+MENUSTRIP
+To Create a menustrip, you will start by using this code --> MenuStrip YourVariableName = new MenuStrip()
+
+MENUITEM
+To Create a Menu Item, you will use --> ToolStripMenuItem VariableName = new ToolStripMenuItem --> (This means that 
+you declared a tool called ToolStripMenuItem and you gave it whatever variable name to access it so let's leave it as VariableName.)
+
+VariableName.Click += new EventHandler(VariableName_Click); --> (This means that the tool you just declared, it is going to be used by clicking on the tool
+and you gave it a new event handler called (VariableName_Click));
+
+menuStrip.Items.Add(VariableName) -> This entails that you are adding the menu item you just made to the menu strip which will be shown on the form

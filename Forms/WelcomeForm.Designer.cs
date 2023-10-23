@@ -29,27 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.wELCOMEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hELLOWORLDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cALCULATORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.helloWorldMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculatorMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.contextMenuStrip1.SuspendLayout();
-            this.menuStrip2.SuspendLayout();
+            this.menuStrip.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 28);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(30, 624);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // contextMenuStrip1
             // 
@@ -69,74 +59,75 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(514, 357);
+            this.label1.Location = new System.Drawing.Point(52, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 53);
+            this.label1.Size = new System.Drawing.Size(118, 42);
             this.label1.TabIndex = 3;
             this.label1.Text = "label1";
             // 
-            // menuStrip2
+            // menuStrip
             // 
-            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.wELCOMEToolStripMenuItem,
-            this.hELLOWORLDToolStripMenuItem,
-            this.cALCULATORToolStripMenuItem});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(919, 28);
-            this.menuStrip2.TabIndex = 4;
-            this.menuStrip2.Text = "menuStrip2";
+            this.menuStrip.BackColor = System.Drawing.Color.Turquoise;
+            this.menuStrip.Dock = System.Windows.Forms.DockStyle.Left;
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helloWorldMenuItem,
+            this.calculatorMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(156, 664);
+            this.menuStrip.TabIndex = 4;
+            this.menuStrip.Text = "menuStrip";
             // 
-            // wELCOMEToolStripMenuItem
+            // helloWorldMenuItem
             // 
-            this.wELCOMEToolStripMenuItem.Name = "wELCOMEToolStripMenuItem";
-            this.wELCOMEToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
-            this.wELCOMEToolStripMenuItem.Text = "WELCOME";
-            this.wELCOMEToolStripMenuItem.Click += new System.EventHandler(this.wELCOMEToolStripMenuItem_Click);
+            this.helloWorldMenuItem.Name = "helloWorldMenuItem";
+            this.helloWorldMenuItem.Size = new System.Drawing.Size(143, 24);
+            this.helloWorldMenuItem.Text = "HELLO WORLD";
+            this.helloWorldMenuItem.Click += new System.EventHandler(this.helloWorldMenuItem_Click);
             // 
-            // hELLOWORLDToolStripMenuItem
+            // calculatorMenuItem
             // 
-            this.hELLOWORLDToolStripMenuItem.Name = "hELLOWORLDToolStripMenuItem";
-            this.hELLOWORLDToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
-            this.hELLOWORLDToolStripMenuItem.Text = "HELLO WORLD";
-            this.hELLOWORLDToolStripMenuItem.Click += new System.EventHandler(this.hELLOWORLDToolStripMenuItem_Click);
+            this.calculatorMenuItem.Name = "calculatorMenuItem";
+            this.calculatorMenuItem.Size = new System.Drawing.Size(143, 24);
+            this.calculatorMenuItem.Text = "CALCULATOR";
+            this.calculatorMenuItem.Click += new System.EventHandler(this.calculatorMenuItem_Click);
             // 
-            // cALCULATORToolStripMenuItem
+            // panel1
             // 
-            this.cALCULATORToolStripMenuItem.Name = "cALCULATORToolStripMenuItem";
-            this.cALCULATORToolStripMenuItem.Size = new System.Drawing.Size(110, 34);
-            this.cALCULATORToolStripMenuItem.Text = "CALCULATOR";
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(131, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(850, 664);
+            this.panel1.TabIndex = 5;
             // 
             // WelcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 652);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.menuStrip2);
-            this.MainMenuStrip = this.menuStrip1;
+            this.ClientSize = new System.Drawing.Size(986, 664);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuStrip);
             this.Name = "WelcomeForm";
             this.Text = "WelcomeForm";
             this.Load += new System.EventHandler(this.WelcomeForm_Load);
             this.contextMenuStrip1.ResumeLayout(false);
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem wELCOMEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hELLOWORLDToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cALCULATORToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem helloWorldMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculatorMenuItem;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp6
 {
-    partial class Calculator
+    partial class Calculators
     {
         /// <summary>
         /// Required designer variable.
