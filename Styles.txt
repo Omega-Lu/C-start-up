@@ -1,0 +1,33 @@
+#region Constants 
+#endregion Constants
+
+#region Instance Fields
+
+#endregion Instance Fields
+
+#region Properties
+
+#endregion Properties
+
+#region Constructor
+
+#endregion Constructor
+
+#region Overridden Members
+#endregion Overridden Members
+
+#region Internal Classes
+#endregion Internal Classes
+
+#region Public Methods
+
+#endregion Public Methods
+
+#region Private Methods
+
+#endregion  Private Methods
+
+#region Events
+
+#endregion Events
+
